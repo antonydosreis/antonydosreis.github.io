@@ -1,0 +1,31 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, b, i, ol, ul,
+li, fieldset, form, label, legend, table, tr, th, td, footer, nav, button, input, textarea, section, article{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: Lato, sans-serif;
+	font-size: 1em;
+	line-height: 1;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-border-radius: 0; 
+    border-radius: 0;
+}
