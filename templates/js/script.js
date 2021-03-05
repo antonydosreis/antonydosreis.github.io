@@ -3,7 +3,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 	event.preventDefault();
 
 	$('html, body').animate({
-		scrollTop: $($.attr(this, 'href')).offset().top - 100
+		scrollTop: $($.attr(this, 'href')).offset().top - 50
 	}, 500);
 })
 // ENCOLHER MENUS
@@ -30,3 +30,10 @@ function close_div(id){
 	document.body.style.position = "relative";
 	window.scrollTo(0, scrollPosition);
 }
+// CARROSSEL
+$('.carousel').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 10000,
+});

@@ -14,14 +14,14 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="templates/images/icon/android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="templates/images/icon/favicon-16x16.png">
 	<link rel="manifest" href="templates/images/icon/site.webmanifest">
-	<link rel="mask-icon" href="templates/images/icon/safari-pinned-tab.svg" color="#EAF205">
+	<link rel="mask-icon" href="templates/images/icon/safari-pinned-tab.svg" color="#8c765a">
 	<link rel="shortcut icon" href="templates/images/icon/favicon.ico">
-	<meta name="apple-mobile-web-app-title" content="Antony dos Reis | Portfólio">
-	<meta name="application-name" content="Antony dos Reis | Portfólio">
-	<meta name="msapplication-TileColor" content="#EAF205">
+	<meta name="apple-mobile-web-app-title" content="Antony dos Reis | Portf&oacute;lio">
+	<meta name="application-name" content="Antony dos Reis | Portf&oacute;lio">
+	<meta name="msapplication-TileColor" content="#8c765a">
 	<meta name="msapplication-TileImage" content="templates/images/icon/mstile-144x144.png">
 	<meta name="msapplication-config" content="templates/images/icon/browserconfig.xml">
-	<meta name="theme-color" content="#EAF205">
+	<meta name="theme-color" content="#8c765a">
 	<!-- SMO FACEBOOK-->
 	<meta property="og:locale" content="pt_BR">
 	<meta property="og:url" content="https://antonydosreis.github.io">
@@ -63,6 +63,8 @@
 	}
 </script>
 <!-- STYLE-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="templates/css/style.css">
 </head>
 <body>
@@ -75,9 +77,18 @@
 					<li><a href="#sobre">Sobre</a></li>
 					<li><a href="#projetos">Projetos</a></li>
 					<li><a href="#contato">Contato</a></li>
-					<li><a ><i class="fas fa-bars"></i></a></li>
+					<li><a onclick="open_div('menu_mobile')"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</div>
+		</nav>
+		<nav id="menu_mobile">
+			<button class="fechar" onclick="close_div('menu_mobile')">x</button>
+			<ul>
+				<li><a href="#home" onclick="close_div('menu_mobile')">home</a></li>
+				<li><a href="#sobre" onclick="close_div('menu_mobile')">sobre</a></li>
+				<li><a href="#projetos" onclick="close_div('menu_mobile')">projetos</a></li>
+				<li><a href="#contato" onclick="close_div('menu_mobile')">contato</a></li>
+			</ul>
 		</nav>
 		<div class="conteudo">
 			<p>Meu amor pelos códigos em forma de portfólio</p>
@@ -88,7 +99,7 @@
 			<p>Se quiser saber mais ou falar comigo <a href="#contato">entre em contato</a></p>
 			<nav id="redes_sociais">
 				<ul>
-					<li><a href="https://www.linkedin.com/in/lucas-antony-dos-reis-a50b31180/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+					<li><a href="https://www.linkedin.com/in/antony-dos-reis/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
 					<li><a href="https://wa.me/5551994641949"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
 				</ul>
 			</nav>
@@ -97,106 +108,129 @@
 	<main>
 		<section id="sobre">
 			<header class="subtitulo">
-				<h2>O programador</h2>
-				<p>Desenvolvedor frontend à apenas 1 ano, mas com uma sede de aprender tamanha que supera esse período.</p>
+				<h2>Sobre mim</h2>
+				<div></div>
 			</header>
 			<div class="conteudo">
-				<div class=".img"></div>
-				<p>&emsp;&emsp;Nasci em Novo Hamburgo/RS, e desde sempre tive uma certa admiração pela programação. Poder ver um "texto", mesmo sendo ele escrito um um simples bloco de notas se transformando em qualquer coisa que eu quisesse me facinava. Começei usando Javascript e C# para programar jogos digitais no Unity, Minha paixão estava lá, e junto disso meu tempo foi muito investido aprendendo a lógica da programação.</p>
-				<br>
-				<p>&emsp;&emsp;O tempo passou e junto dele desenvolvi muitos projetos e muito conhecimento também, porém, chegava a hora de eu me arriscar em outras linguagens, e foi ai que conheci o HTML. Descobri que assim como meus códigos poderiam fazer meus jogos, eles também poderiam criar sites e sistemas web, e essa também se tornou uma área que me chamou muita atenção. A partir dali, meus esforçoes passaram ser o desenvolvimento frontend, algo que me fez de certa forma a decidir cursar uma faculdade na área. Porém o destino me colocou em um curso de Marketing, algo que mesmo parecendo totalmente diferente e descoeso, me inseriu no mercado das agências, algo que se tornou também uma paixão.</p>
-				<br>
-				<p>&emsp;&emsp;A possibilidade de construir algo com minhas próprias mãos, algo que todos usariam, mas onde sempre teria o meu toque me trazia orgulho e cada vez mais admiração pelos códigos. Hoje me considero um artista em constante aprendizado, onde os códigos são a minha arte e os teclados os meus pinceis. Hoje tenho paixão pelo que faço, e sei que essa paixão e esse conhecimento podem ajudar tantos quanto eu puder me disponibilizar. Um desses pode ser você, entre em contato e vamos conversar.</p>
+				<div></div>
+				<p>&emsp;&emsp;Nasci em Novo Hamburgo/RS, e desde sempre tive uma certa admiração pela programação. Poder ver um "texto", mesmo sendo ele escrito em um simples bloco de notas se transformando em qualquer coisa que eu quisesse me fascinava. Comecei usando Javascript e C# para programar jogos digitais no Unity, Minha paixão estava lá, e junto disso meu tempo foi muito investido aprendendo a lógica da programação.
+				<br><br>&emsp;&emsp;O tempo passou e junto dele desenvolvi muitos projetos e muito conhecimento também, porém, chegava a hora de me arriscar em outras linguagens, e foi aí que conheci o HTML. Descobri que assim como meus códigos poderiam fazer meus jogos, eles também poderiam criar sites e sistemas web, e essa também se tornou uma área que me chamou muita atenção. A partir dali, meus esforços passaram a ser o desenvolvimento frontend, algo que me fez de certa forma a decidir cursar uma faculdade na área. Porém, algo me colocou em um curso de Marketing, e que mesmo parecendo totalmente diferente e desconexo, me inseriu no mercado das agências, uma coisa que se tornou também uma paixão.
+				<br><br>&emsp;&emsp;A possibilidade de construir algo com minhas próprias mãos, algo que todos usariam, mas onde sempre teria o meu toque me trazia orgulho e cada vez mais admiração pelos códigos. Hoje sendo um desenvolvedor web front end, me considero também um artista em constante aprendizado, onde os códigos são a minha arte e os teclados os meus pinceis. Tenho paixão pelo que faço, e sei que essa paixão e esse conhecimento podem ajudar tantos quanto eu puder me disponibilizar. Um desses pode ser você, entre em contato e vamos conversar.</p>
 			</div>
 		</section>
 		<section id="projetos">
-			<header class="subtitulo"><h2>Projetos</h2></header>
+			<header class="subtitulo"><h2>Projetos</h2><div></div></header>
 			<div class="conteudo">
-				<article>
-					<div class="detalhes">
-						<header><h3>Ferrmax</h3></header>
-						<hr>
-						<p>Descrição</p>
-						<a href="">Ver mais</a>
-					</div>
-					<div class="img">
-						<img src="templates/images/ferrmax.png" alt="Preview - Ferrmax" title="Preview - Ferrmax">
-					</div>
-				</article>
-				<article>
-					<div class="detalhes">
-						<header><h3>Agência O Diário</h3></header>
-						<hr>
-						<p>Descrição</p>
-						<a href="">Ver mais</a>
-					</div>
-					<div class="img">
-						<img src="templates/images/agenciaodiario.png" alt="Preview - Agência O DIário" title="Preview - Agência O DIário">
-					</div>
-				</article>
-				<article>
-					<div class="detalhes">
-						<header><h3>Ateliê Faber</h3></header>
-						<hr>
-						<p>Descrição</p>
-						<a href="">Ver mais</a>
-					</div>
-					<div class="img">
-						<img src="templates/images/atelierfaber.png" alt="Preview - Ateliê Faber" title="Preview - Ateliê Faber">
-					</div>
-				</article>
-				<article>
-					<div class="detalhes">
-						<header><h3>Limpa Tubo</h3></header>
-						<hr>
-						<p>Descrição</p>
-						<a href="">Ver mais</a>
-					</div>
-					<div class="img">
-						<img src="templates/images/limpatubo.png" alt="Preview - Limpa Tubo" title="Preview - Limpa Tubo">
-					</div>
-				</article>
-				<article>
-					<div class="detalhes">
-						<header><h3>Anbe Comercial</h3></header>
-						<hr>
-						<p>Descrição</p>
-						<a href="">Ver mais</a>
-					</div>
-					<div class="img">
-						<img src="https://picsum.photos/1280/720?random=5" alt="Preview - Anbe Comercial" title="Preview - Anbe Comercial">
-					</div>
-				</article>
+				<div class="carousel">
+					<article>
+						<div class="detalhes">
+							<header><h3>Ferrmax</h3></header>
+							<hr>
+							<p>Primeiro site desenvolvido para uma Agência. Com certeza foi onde aprendi a fazer a maioria das coisas que eu nem sequer sabia serem necessárias, pois não fazia quando programava por Hobby</p>
+							<a href="ferrmax.html">Saber mais</a>
+						</div>
+						<div class="img">
+							<img src="templates/images/ferrmax.png" alt="Preview - Ferrmax" title="Preview - Ferrmax">
+							<div></div>
+							<img src="templates/images/ferrmax-mobile.png" alt="Preview mobile - Ferrmax" title="Preview mobile - Ferrmax">
+						</div>
+					</article>
+					<article>
+						<div class="detalhes">
+							<header><h3>Agência O Diário</h3></header>
+							<hr>
+							<p>Meu segundo site feito profissionalmente foi o próprio site da agência em que trabalho. Fui encarregado de refazer um site que feito na Wix em programação pura, para ganho de desempenho de carregamento e SEO</p>
+							<a href="agenciaodiario.html">Saber mais</a>
+						</div>
+						<div class="img">
+							<img src="templates/images/agenciaodiario.png" alt="Preview - Agência O DIário" title="Preview - Agência O DIário">
+							<div></div>
+							<img src="templates/images/agenciaodiario-mobile.png" alt="Preview mobile - Agência O DIário" title="Preview mobile - Agência O DIário">
+						</div>
+					</article>
+					<article>
+						<div class="detalhes">
+							<header><h3>Ateliê Faber</h3></header>
+							<hr>
+							<p>Aqui foi onde conheci os cronogramas e prazos. Algo que me fez aprender a trabalhar com rapidez, mas também a usar métodos mais ágeis</p>
+							<a href="ateliefaber.html">Saber mais</a>
+						</div>
+						<div class="img">
+							<img src="templates/images/atelierfaber.png" alt="Preview - Ateliê Faber" title="Preview - Ateliê Faber">
+							<div></div>
+							<img src="templates/images/atelierfaber-mobile.png" alt="Preview mobile - Ateliê Faber" title="Preview mobile - Ateliê Faber">
+						</div>
+					</article>
+					<article>
+						<div class="detalhes">
+							<header><h3>Limpa Tubo</h3></header>
+							<hr>
+							<p>Muito aprendizado na parte de pré-processadores CSS, algo que praticamente me viciou e, em simultâneo, me fez trabalhar mais rápido. Este foi o site em que desenvolvi em menos horas</p>
+							<a href="limpatubo.html">Saber mais</a>
+						</div>
+						<div class="img">
+							<img src="templates/images/limpatubo.png" alt="Preview - Limpa Tubo" title="Preview - Limpa Tubo">
+							<div></div>
+							<img src="templates/images/limpatubo-mobile.png" alt="Preview mobile - Limpa Tubo" title="Preview mobile - Limpa Tubo">
+						</div>
+					</article>
+					<!-- <article>
+						<div class="detalhes">
+							<header><h3>Anbe Comercial</h3></header>
+							<hr>
+							<p>Minha primeira aventura no mundo do Freelance. Aqui estive envolvido em todo o processo, desde o planejamento até a execução e a entrega.</p>
+							<a href="anbecomercial.html">Saber mais</a>
+						</div>
+						<div class="img">
+							<img src="https://picsum.photos/640/360?random=5" alt="Preview - Anbe Comercial" title="Preview - Anbe Comercial">
+							<div></div>
+							<img src="https://picsum.photos/188/334?random=5" alt="Preview mobile - Anbe Comercial" title="Preview mobile - Anbe Comercial">
+						</div>
+					</article> -->
+				</div>
 			</div>
 		</section>
 		<section id="cta">
 			<div class="conteudo">
-				<p>Estou disposto a ajudar no desenvolvimento dos sites de sua agência.</p>
-				<p>Disposto a realizar o seu site, ou do seu negócio</p>
-				<p>E ainda mais, disposto a crescer junto com a sua empresa</p>
-				<button>Download CV</button>
+				<div class="chamadas">
+					<div>
+						<img src="templates/images/help.svg" alt="Ajudar a sua agência" title="Ajudar a sua agência">
+						<p>Estou disposto a ajudar no desenvolvimento dos sites de sua agência.</p>
+					</div>
+					<div>
+						<img src="templates/images/site.svg" alt="Criar o seu site" title="Criar o seu site">
+						<p>Disposto a realizar o seu site, ou do seu negócio</p>
+					</div>
+					<div>
+						<img src="templates/images/work.svg" alt="Crescer com sua empresa" title="Crescer com sua empresa">
+						<p>E ainda mais, disposto a crescer com a sua empresa</p>
+						<a href="https://antonydosreis.github.io/lucas-antony-dos-reis.pdf" target="_blank">Download CV</a>
+					</div>
+				</div>
 				<header><h2>Estou sempre disponível para um orçamento</h2></header>
 			</div>
 		</section>
 		<section id="contato">
 			<div class="conteudo">
-				<header><h2>Entre em contato e vamos conversar</h2></header>
-				<a href="https://www.google.com/maps/dir//Ivoti+-+Rio+Grande+do+Sul/">
-					<p>Onde eu estou</p>
-					<p>Ivoti, Rio Grande do sul</p>
-				</a>
-				<a href="https://wa.me/5551994641949">
-					<p>Meu telefone e WhatsApp</p>
-					<p>(51) 99464 1949</p>
-				</a>
-				<a href="https://antonydosreis.github.io/">
-					<p>Meu site (este)</p>
-					<p>antonydosreis.github.io/</p>
-				</a>
-				<a href="mailto:lucasantonydosreis@gmail.com">
-					<p>E meu email</p>
-					<p>lucasantonydosreis@gmail.com</p>
-				</a>
+				<header class="subtitulo"><h2>Entre em contato e vamos conversar</h2><div></div></header>
+				<div class="meios_de_contato">
+					<a href="https://www.google.com/maps/dir//Ivoti+-+Rio+Grande+do+Sul/" target="_blank">
+						<p>Onde eu estou</p>
+						<p>Ivoti, Rio Grande do sul</p>
+					</a>
+					<a href="https://wa.me/5551994641949" target="_blank">
+						<p>Meu telefone e WhatsApp</p>
+						<p>(51) 99464 1949</p>
+					</a>
+					<a href="https://antonydosreis.github.io" target="_blank">
+						<p>Meu site (este)</p>
+						<p>antonydosreis.github.io/</p>
+					</a>
+					<a href="mailto:lucasantonydosreis@gmail.com" target="_blank">
+						<p>E meu email</p>
+						<p>lucasantonydosreis@gmail.com</p>
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -204,6 +238,7 @@
 		<p>© 2021 Todos os direitos reservados</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
 	<script type="text/javascript" src="templates/js/script.js"></script>
 	<script src="https://kit.fontawesome.com/255b8c2dbb.js" crossorigin="anonymous"></script>
 </body>
