@@ -129,7 +129,9 @@ footer {
       bottom: 5rem;
       width: 90vw;
       left: 5vw;
-      > div {
+      > a {
+        display: block;
+        padding: 0.5rem;
         text-align: center;
         background-color: #006fcf;
         margin-top: 0.5rem;
