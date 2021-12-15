@@ -17,7 +17,7 @@
           <p>CNS - 808386675740001</p>
           <!-- https://geradornv.com.br/gerador-cns/ -->
         </div>
-        <div class="image">
+        <div class="image" onclick="open_div('modal-load', 'flex')">
           <img src="images/icon-user.jpeg" />
         </div>
       </div>
@@ -27,22 +27,22 @@
       <div class="header-actions">
         <div class="title">
           <p><b>Ações rápidas</b></p>
-          <a href="#">VER TODOS</a>
+          <a href="#" onclick="open_div('modal-load', 'flex')">VER TODOS</a>
         </div>
         <div class="items">
-          <div class="item">
+          <div class="item" onclick="open_div('modal-load', 'flex')">
             <img src="images/icon-home-1.jpeg" />
             <p>Vacinas</p>
           </div>
-          <div class="item">
+          <div class="item" onclick="open_div('modal-load', 'flex')">
             <img src="images/icon-home-2.jpeg" />
             <p>Exames</p>
           </div>
-          <div class="item">
+          <div class="item" onclick="open_div('modal-load', 'flex')">
             <img src="images/icon-home-3.jpeg" />
             <p>Medicamentos</p>
           </div>
-          <div class="item">
+          <div class="item" onclick="open_div('modal-load', 'flex')">
             <img src="images/icon-home-4.jpeg" />
             <p>Valida<br />QRCode</p>
           </div>
@@ -51,7 +51,7 @@
     </header>
     <main>
       <div class="registers">
-        <div class="add-register">
+        <div class="add-register" onclick="open_div('modal-load', 'flex')">
           <img src="images/add-register.jpeg" />
           <p>Adicionar registro</p>
         </div>
@@ -62,8 +62,8 @@
       </div>
     </main>
     <footer>
-      <div><img src="images/icon-footer-1.jpeg" /></div>
-      <div><img src="images/icon-footer-2.jpeg" /></div>
+      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-1.jpeg" /></div>
+      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-2.jpeg" /></div>
       <div class="main">
         <img
           onclick="open_div('options')"
@@ -71,7 +71,7 @@
           src="images/icon-footer-3.jpeg"
         />
         <div class="options" id="options">
-          <a href="#">
+          <a href="#" onclick="open_div('modal-load', 'flex')">
             <p>
               <img src="images/hover-icon-1.jpeg" /> Carteira Nacional de
               Vacinação
@@ -83,13 +83,13 @@
               COVID-19
             </p>
           </a>
-          <a href="#">
+          <a href="#" onclick="open_div('modal-load', 'flex')">
             <p><img src="images/hover-icon-3.jpeg" /> Cartão SUS</p>
           </a>
         </div>
       </div>
-      <div><img src="images/icon-footer-4.jpeg" /></div>
-      <div><img src="images/icon-footer-5.jpeg" /></div>
+      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-4.jpeg" /></div>
+      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-5.jpeg" /></div>
     </footer>
     <div class="modal-certificate" id="modal-certificate">
       <div class="close" onclick="close_div('modal-certificate')">&times;</div>
@@ -129,6 +129,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="modal-load" id="modal-load" onclick="close_div('modal-load')">
+      <div class="content">
+        <div class="load"></div>
       </div>
     </div>
     <script src="./script.js"></script>

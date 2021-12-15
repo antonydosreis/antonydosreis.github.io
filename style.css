@@ -150,6 +150,40 @@ footer .main .options p img {
   margin-right: 0.5rem;
 }
 
+.modal-load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-load .content {
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-load .content .load {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-bottom-color: #006fcf;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .modal-certificate {
   position: fixed;
   top: 0;
@@ -219,7 +253,7 @@ footer .main .options p img {
   flex-basis: 50%;
 }
 .modal-certificate .content .vaccine {
-  border: 1px solid #F5D04B;
+  border: 1px solid #f5d04b;
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin-top: 0.5rem;
