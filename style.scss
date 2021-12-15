@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+b {
+  font-weight: bold;
+}
+
+header {
+  background-color: #f2f4fb;
+  border-radius: 0 0 2rem 2rem;
+  padding: 0.5rem 1rem 0.2rem;
+  .header-user-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      &.main {
+        font-size: 1.4rem;
+        color: #000;
+      }
+    }
+  }
+  .header-ad {
+    img {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  .header-actions {
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      p {
+        font-size: 1.2rem;
+      }
+      a {
+        font-weight: bold;
+        color: #2c70af;
+        text-decoration: none;
+      }
+    }
+    .items {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      .item {
+        text-align: center;
+        img {
+          padding: 0.8rem;
+          background-color: #fefefe;
+          border-radius: 0.5rem;
+          border: 1px solid #eee;
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: bold;
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 0 1rem 5rem;
+  .registers {
+    display: flex;
+    margin: 1.5rem 0;
+    gap: 0.7rem;
+    div {
+      flex-basis: 50%;
+      border-radius: 0.5rem;
+      border: 1px solid #eee;
+      padding: 1rem;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .allergies {
+      justify-content: left;
+      align-items: flex-start;
+      .title {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  div {
+    padding: 0.7rem;
+  }
+  .main {
+    padding: 0;
+    .icon-main {
+      padding: 0.7rem;
+      background-color: #006fcf;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      transform: translateY(-1rem);
+    }
+    .options {
+      display: none;
+      position: fixed;
+      bottom: 5rem;
+      width: 90vw;
+      left: 5vw;
+      > div {
+        text-align: center;
+        background-color: #006fcf;
+        margin-top: 0.5rem;
+        border-radius: 100rem;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+      }
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.modal-certificate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+
+  .close {
+    font-size: 2rem;
+    position: fixed;
+    top: 2rem;
+    left: 1rem;
+    color: #fff;
+  }
+
+  .pdf {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    background-color: #fff;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .bra {
+    position: fixed;
+    top: 2rem;
+    left: calc(50vw - 49px);
+    background-color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5rem;
+  }
+
+  .content {
+    position: fixed;
+    top: 6rem;
+    left: 3rem;
+    width: calc(100vw - 6rem);
+    height: calc(100vh - 15rem);
+    border-radius: 2rem;
+    background-image: url(./images/logo-bra.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 25%;
+    background-color: #f9fbfc;
+    .content-2 {
+      padding: 1rem;
+    }
+    img {
+      border-radius: 2rem 2rem 0 0;
+      width: 100%;
+    }
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    strong {
+      font-weight: bold;
+    }
+    .flex {
+      display: flex;
+      > div {
+        flex-basis: 50%;
+      }
+    }
+  }
+}

@@ -1,254 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<title>Antony dos Reis | Portfólio</title>
-	<meta name="description" content="Antony dos Reis desenvolvimento frontend. Minha paixão são os códigos. Eu sou o artista, e eles, a minha arte.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Antony dos Reis, lucasantonydosreis@gmail.com">
-	<link rel="canonical" href="https://antonydosreis.github.io/">
-	<meta name="robots" content="index, nofollow">
-	<!-- ICON-->
-	<link rel="apple-touch-icon" sizes="180x180" href="templates/images/icon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="templates/images/icon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="templates/images/icon/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="templates/images/icon/favicon-16x16.png">
-	<link rel="manifest" href="templates/images/icon/site.webmanifest">
-	<link rel="mask-icon" href="templates/images/icon/safari-pinned-tab.svg" color="#8c765a">
-	<link rel="shortcut icon" href="templates/images/icon/favicon.ico">
-	<meta name="apple-mobile-web-app-title" content="Antony dos Reis | Portf&oacute;lio">
-	<meta name="application-name" content="Antony dos Reis | Portf&oacute;lio">
-	<meta name="msapplication-TileColor" content="#8c765a">
-	<meta name="msapplication-TileImage" content="templates/images/icon/mstile-144x144.png">
-	<meta name="msapplication-config" content="templates/images/icon/browserconfig.xml">
-	<meta name="theme-color" content="#8c765a">
-	<!-- SMO FACEBOOK-->
-	<meta property="og:locale" content="pt_BR">
-	<meta property="og:url" content="https://antonydosreis.github.io">
-	<meta property="og:title" content="Antony dos Reis | Portfólio">
-	<meta property="og:site_name" content="Antony dos Reis | Portfólio">
-	<meta property="og:description" content="Antony dos Reis desenvolvimento frontend. Minha paixão são os códigos. Eu sou o artista, e eles, a minha arte.">
-	<meta property="og:image" content="https://antonydosreis.github.io/templates/images/cover.png">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="1920">
-	<meta property="og:image:height" content="1080">
-	<meta property="og:type" content="website">
-	<!-- SMO TWITTER-->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:description" content="Antony dos Reis desenvolvimento frontend. Minha paixão são os códigos. Eu sou o artista, e eles, a minha arte." />
-	<meta name="twitter:title" content="Antony dos Reis | Portfólio" />
-	<meta name="twitter:site" content="@antony_dos_reis" />
-	<meta name="twitter:image" content="https://antonydosreis.github.io/templates/images/cover.png" />
-	<meta name="twitter:creator" content="@antony_dos_reis" />
-	<!-- STRUCTURED GOOGLE DATA -->
-	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org",
-			"@type": "LocalBusiness",
-			"name": "Antony dos Reis - Desenvolvedor Frontend",
-			"image": "https://antonydosreis.github.io/templates/images/cover.png",
-			"logo": "https://antonydosreis.github.io/templates/images/logo.png",
-			"telephone": "51994641949",
-			"email": "programador@antonydosreis.github.io",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "Rua Rio Pelotas, nº 124",
-				"addressLocality": "Bairro Liberdade - Novo Hamburgo",
-				"addressRegion": "RS",
-				"addressCountry": "Brasil",
-				"postalCode": "93332-330"
-			},
-		"url": "https://antonydosreis.github.io",
-		"priceRange": "$"
-	}
-</script>
-<!-- STYLE-->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"/>
-<link rel="stylesheet" type="text/css" href="templates/css/style.css">
-</head>
-<body>
-	<header id="home">
-		<nav id="menu_principal">
-			<div class="conteudo">
-				<p>Antony dos Reis</p>
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#projetos">Projetos</a></li>
-					<li><a href="#contato">Contato</a></li>
-					<li><a onclick="open_div('menu_mobile')"><i class="fas fa-bars"></i></a></li>
-				</ul>
-			</div>
-		</nav>
-		<nav id="menu_mobile">
-			<button class="fechar" onclick="close_div('menu_mobile')">x</button>
-			<ul>
-				<li><a href="#home" onclick="close_div('menu_mobile')">home</a></li>
-				<li><a href="#sobre" onclick="close_div('menu_mobile')">sobre</a></li>
-				<li><a href="#projetos" onclick="close_div('menu_mobile')">projetos</a></li>
-				<li><a href="#contato" onclick="close_div('menu_mobile')">contato</a></li>
-			</ul>
-		</nav>
-		<div class="conteudo">
-			<p>Meu amor pelos códigos em forma de portfólio</p>
-			<p id="nome">Antony dos Reis</p>
-			<h1>Desenvolvedor web front end</h1>
-			<p>Fique a vontade</p>
-			<br>
-			<p>Se quiser saber mais ou falar comigo <a href="#contato">entre em contato</a></p>
-			<nav id="redes_sociais">
-				<ul>
-					<li><a href="https://www.linkedin.com/in/antony-dos-reis/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-					<li><a href="https://wa.me/5551994641949"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<section id="sobre">
-			<header class="subtitulo">
-				<h2>Sobre mim</h2>
-				<div></div>
-			</header>
-			<div class="conteudo">
-				<div></div>
-				<p>&emsp;&emsp;Nasci em Novo Hamburgo/RS, e desde sempre tive uma certa admiração pela programação. Poder ver um "texto", mesmo sendo ele escrito em um simples bloco de notas se transformando em qualquer coisa que eu quisesse me fascinava. Comecei usando Javascript e C# para programar jogos digitais no Unity, Minha paixão estava lá, e junto disso meu tempo foi muito investido aprendendo a lógica da programação.
-				<br><br>&emsp;&emsp;O tempo passou e junto dele desenvolvi muitos projetos e muito conhecimento também, porém, chegava a hora de me arriscar em outras linguagens, e foi aí que conheci o HTML. Descobri que assim como meus códigos poderiam fazer meus jogos, eles também poderiam criar sites e sistemas web, e essa também se tornou uma área que me chamou muita atenção. A partir dali, meus esforços passaram a ser o desenvolvimento frontend, algo que me fez de certa forma a decidir cursar uma faculdade na área. Porém, algo me colocou em um curso de Marketing, e que mesmo parecendo totalmente diferente e desconexo, me inseriu no mercado das agências, uma coisa que se tornou também uma paixão.
-				<br><br>&emsp;&emsp;A possibilidade de construir algo com minhas próprias mãos, algo que todos usariam, mas onde sempre teria o meu toque me trazia orgulho e cada vez mais admiração pelos códigos. Hoje sendo um desenvolvedor web front end, me considero também um artista em constante aprendizado, onde os códigos são a minha arte e os teclados os meus pinceis. Tenho paixão pelo que faço, e sei que essa paixão e esse conhecimento podem ajudar tantos quanto eu puder me disponibilizar. Um desses pode ser você, entre em contato e vamos conversar.</p>
-			</div>
-		</section>
-		<section id="projetos">
-			<header class="subtitulo"><h2>Projetos</h2><div></div></header>
-			<div class="conteudo">
-				<div class="carousel">
-					<article>
-						<div class="detalhes">
-							<header><h3>Ferrmax</h3></header>
-							<hr>
-							<p>Primeiro site desenvolvido para uma Agência. Com certeza foi onde aprendi a fazer a maioria das coisas que eu nem sequer sabia serem necessárias, pois não fazia quando programava por Hobby</p>
-							<a href="ferrmax.html">Saber mais</a>
-						</div>
-						<div class="img">
-							<img src="templates/images/ferrmax.png" alt="Preview - Ferrmax" title="Preview - Ferrmax">
-							<div></div>
-							<img src="templates/images/ferrmax-mobile.png" alt="Preview mobile - Ferrmax" title="Preview mobile - Ferrmax">
-						</div>
-					</article>
-					<article>
-						<div class="detalhes">
-							<header><h3>Agência O Diário</h3></header>
-							<hr>
-							<p>Meu segundo site feito profissionalmente foi o próprio site da agência em que trabalho. Fui encarregado de refazer um site que feito na Wix em programação pura, para ganho de desempenho de carregamento e SEO</p>
-							<a href="agenciaodiario.html">Saber mais</a>
-						</div>
-						<div class="img">
-							<img src="templates/images/agenciaodiario.png" alt="Preview - Agência O DIário" title="Preview - Agência O DIário">
-							<div></div>
-							<img src="templates/images/agenciaodiario-mobile.png" alt="Preview mobile - Agência O DIário" title="Preview mobile - Agência O DIário">
-						</div>
-					</article>
-					<article>
-						<div class="detalhes">
-							<header><h3>Ateliê Faber</h3></header>
-							<hr>
-							<p>Aqui foi onde conheci os cronogramas e prazos. Algo que me fez aprender a trabalhar com rapidez, mas também a usar métodos mais ágeis</p>
-							<a href="ateliefaber.html">Saber mais</a>
-						</div>
-						<div class="img">
-							<img src="templates/images/atelierfaber.png" alt="Preview - Ateliê Faber" title="Preview - Ateliê Faber">
-							<div></div>
-							<img src="templates/images/atelierfaber-mobile.png" alt="Preview mobile - Ateliê Faber" title="Preview mobile - Ateliê Faber">
-						</div>
-					</article>
-					<article>
-						<div class="detalhes">
-							<header><h3>Limpa Tubo</h3></header>
-							<hr>
-							<p>Muito aprendizado na parte de pré-processadores CSS, algo que praticamente me viciou e, em simultâneo, me fez trabalhar mais rápido. Este foi o site em que desenvolvi em menos horas</p>
-							<a href="limpatubo.html">Saber mais</a>
-						</div>
-						<div class="img">
-							<img src="templates/images/limpatubo.png" alt="Preview - Limpa Tubo" title="Preview - Limpa Tubo">
-							<div></div>
-							<img src="templates/images/limpatubo-mobile.png" alt="Preview mobile - Limpa Tubo" title="Preview mobile - Limpa Tubo">
-						</div>
-					</article>
-					<!-- <article>
-						<div class="detalhes">
-							<header><h3>Anbe Comercial</h3></header>
-							<hr>
-							<p>Minha primeira aventura no mundo do Freelance. Aqui estive envolvido em todo o processo, desde o planejamento até a execução e a entrega.</p>
-							<a href="anbecomercial.html">Saber mais</a>
-						</div>
-						<div class="img">
-							<img src="https://picsum.photos/640/360?random=5" alt="Preview - Anbe Comercial" title="Preview - Anbe Comercial">
-							<div></div>
-							<img src="https://picsum.photos/188/334?random=5" alt="Preview mobile - Anbe Comercial" title="Preview mobile - Anbe Comercial">
-						</div>
-					</article> -->
-				</div>
-			</div>
-		</section>
-		<section id="cta">
-			<div class="conteudo">
-				<div class="chamadas">
-					<div>
-						<img src="templates/images/help.svg" alt="Ajudar a sua agência" title="Ajudar a sua agência">
-						<p>Estou disposto a ajudar no desenvolvimento dos sites de sua agência.</p>
-					</div>
-					<div>
-						<img src="templates/images/site.svg" alt="Criar o seu site" title="Criar o seu site">
-						<p>Disposto a realizar o seu site, ou do seu negócio</p>
-					</div>
-					<div>
-						<img src="templates/images/work.svg" alt="Crescer com sua empresa" title="Crescer com sua empresa">
-						<p>E ainda mais, disposto a crescer com a sua empresa</p>
-						<a href="https://antonydosreis.github.io/lucas-antony-dos-reis.pdf" target="_blank">Download CV</a>
-					</div>
-				</div>
-				<header><h2>Estou sempre disponível para um orçamento</h2></header>
-			</div>
-		</section>
-		<section id="contato">
-			<div class="conteudo">
-				<header class="subtitulo"><h2>Entre em contato e vamos conversar</h2><div></div></header>
-				<div class="meios_de_contato">
-					<a href="https://www.google.com/maps/dir//Ivoti+-+Rio+Grande+do+Sul/" target="_blank">
-						<p>Onde eu estou</p>
-						<p>Ivoti, Rio Grande do sul</p>
-					</a>
-					<a href="https://wa.me/5551994641949" target="_blank">
-						<p>Meu telefone e WhatsApp</p>
-						<p>(51) 99464 1949</p>
-					</a>
-					<a href="https://antonydosreis.github.io" target="_blank">
-						<p>Meu site (este)</p>
-						<p>antonydosreis.github.io/</p>
-					</a>
-					<a href="mailto:lucasantonydosreis@gmail.com" target="_blank">
-						<p>E meu email</p>
-						<p>lucasantonydosreis@gmail.com</p>
-					</a>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<p>© 2021 Todos os direitos reservados</p>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-	<script type="text/javascript" src="templates/js/script.js"></script>
-	<script src="https://kit.fontawesome.com/255b8c2dbb.js" crossorigin="anonymous"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXHP0LRPK0"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-DXHP0LRPK0');
-	</script>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConecteSUS</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-user-bar">
+        <div class="info">
+          <p class="main"><b>Olá, Lucas Antony dos Reis</b></p>
+          <p>CPF - 046.918.910-05</p>
+          <p>CNS - 808386675740001</p>
+          <!-- https://geradornv.com.br/gerador-cns/ -->
+        </div>
+        <div class="image">
+          <img src="images/icon-user.jpeg" />
+        </div>
+      </div>
+      <div class="header-ad">
+        <img src="images/vaccine-ad.jpeg" />
+      </div>
+      <div class="header-actions">
+        <div class="title">
+          <p><b>Ações rápidas</b></p>
+          <a href="#">VER TODOS</a>
+        </div>
+        <div class="items">
+          <div class="item">
+            <img src="images/icon-home-1.jpeg" />
+            <p>Vacinas</p>
+          </div>
+          <div class="item">
+            <img src="images/icon-home-2.jpeg" />
+            <p>Exames</p>
+          </div>
+          <div class="item">
+            <img src="images/icon-home-3.jpeg" />
+            <p>Medicamentos</p>
+          </div>
+          <div class="item">
+            <img src="images/icon-home-4.jpeg" />
+            <p>Valida<br />QRCode</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="registers">
+        <div class="add-register">
+          <img src="images/add-register.jpeg" />
+          <p>Adicionar registro</p>
+        </div>
+        <div class="allergies">
+          <p class="title"><b>ALERGIAS</b></p>
+          <p>Clique aqui para acessar as suas alergias</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div><img src="images/icon-footer-1.jpeg" /></div>
+      <div><img src="images/icon-footer-2.jpeg" /></div>
+      <div class="main">
+        <img class="icon-main" src="images/icon-footer-3.jpeg" />
+        <div class="options">
+          <div>
+            <p>
+              <img src="images/hover-icon-1.jpeg" /> Carteira Nacional de
+              Vacinação
+            </p>
+          </div>
+          <div>
+            <p>
+              <img src="images/hover-icon-2.jpeg" /> Certificado de Vacina
+              COVID-19
+            </p>
+          </div>
+          <div>
+            <p><img src="images/hover-icon-3.jpeg" /> Cartão SUS</p>
+          </div>
+        </div>
+      </div>
+      <div><img src="images/icon-footer-4.jpeg" /></div>
+      <div><img src="images/icon-footer-5.jpeg" /></div>
+    </footer>
+    <div class="modal-certificate">
+      <div class="close">&times;</div>
+      <img class="bra" src="images/bra.jpeg" />
+      <img class="pdf" src="images/pdf.jpeg" />
+      <div class="content">
+        <img src="images/bra-background.jpeg" />
+        <div class="content-2">
+          <h3>Certificado Nacional de Vacinação<br />Covid 19</h3>
+          <strong>Nome</strong>
+          <p>Lucas Antony dos Reis</p>
+          <strong>Nome da Mãe</strong>
+          <p>Leila Tatiana Canabarro</p>
+          <div class="flex">
+            <div>
+              <strong>Nascimento</strong>
+              <p>18/04/2000</p>
+            </div>
+            <div>
+              <strong>CPF ou CNS</strong>
+              <p>046.918.910-05</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
