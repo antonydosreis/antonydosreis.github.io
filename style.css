@@ -154,6 +154,7 @@ footer .main .options p img {
   width: 100%;
   height: 100%;
   background-color: #00000080;
+  display: none;
 }
 .modal-certificate .close {
   font-size: 2rem;

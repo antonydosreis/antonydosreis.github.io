@@ -65,15 +65,15 @@
       <div><img src="images/icon-footer-1.jpeg" /></div>
       <div><img src="images/icon-footer-2.jpeg" /></div>
       <div class="main">
-        <img class="icon-main" src="images/icon-footer-3.jpeg" />
-        <div class="options">
+        <img onclick="open_div('options')" class="icon-main" src="images/icon-footer-3.jpeg" />
+        <div class="options" id="options">
           <div>
             <p>
               <img src="images/hover-icon-1.jpeg" /> Carteira Nacional de
               Vacinação
             </p>
           </div>
-          <div>
+          <div onclick="open_div('modal-certificate')">
             <p>
               <img src="images/hover-icon-2.jpeg" /> Certificado de Vacina
               COVID-19
@@ -87,8 +87,8 @@
       <div><img src="images/icon-footer-4.jpeg" /></div>
       <div><img src="images/icon-footer-5.jpeg" /></div>
     </footer>
-    <div class="modal-certificate">
-      <div class="close">&times;</div>
+    <div class="modal-certificate" id="modal-certificate">
+      <div class="close" onclick="close_div('modal-certificate')">&times;</div>
       <img class="bra" src="images/bra.jpeg" />
       <img class="pdf" src="images/pdf.jpeg" />
       <div class="content">
@@ -112,5 +112,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
