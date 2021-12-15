@@ -131,6 +131,7 @@ footer .main .options {
   left: 5vw;
 }
 footer .main .options > a {
+  text-decoration: none;
   display: block;
   padding: 0.5rem;
   text-align: center;
@@ -209,12 +210,24 @@ footer .main .options p img {
 }
 .modal-certificate .content strong {
   font-weight: bold;
+  font-size: 0.8rem;
 }
 .modal-certificate .content .flex {
   display: flex;
 }
 .modal-certificate .content .flex > div {
   flex-basis: 50%;
+}
+.modal-certificate .content .vaccine {
+  border: 1px solid #F5D04B;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.modal-certificate .content .vaccine h3 {
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
