@@ -6,148 +6,30 @@
   font: inherit;
 }
 
+html {
+  background: url(./images/conecta-sus-print.jpegs);
+  background-position: center -35px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  height: 100%;
+}
+
+.container {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-b {
+b,
+strong {
   font-weight: bold;
-}
-
-header {
-  background-color: #f2f4fb;
-  border-radius: 0 0 2rem 2rem;
-  padding: 0.5rem 1rem 0.2rem;
-}
-header .header-user-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .header-user-bar p {
-  font-size: 1.2rem;
-  color: #666;
-}
-header .header-user-bar p.main {
-  font-size: 1.4rem;
-  color: #000;
-}
-header .header-ad img {
-  width: 100%;
-  margin: 1rem 0;
-}
-header .header-actions .title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-}
-header .header-actions .title p {
-  font-size: 1.2rem;
-}
-header .header-actions .title a {
-  font-weight: bold;
-  color: #2c70af;
-  text-decoration: none;
-}
-header .header-actions .items {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0;
-}
-header .header-actions .items .item {
-  text-align: center;
-}
-header .header-actions .items .item img {
-  padding: 0.8rem;
-  background-color: #fefefe;
-  border-radius: 0.5rem;
-  border: 1px solid #eee;
-}
-header .header-actions .items .item p {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #555;
-}
-
-main {
-  padding: 0 1rem 5rem;
-}
-main .registers {
-  display: flex;
-  margin: 1.5rem 0;
-  gap: 0.7rem;
-}
-main .registers div {
-  flex-basis: 50%;
-  border-radius: 0.5rem;
-  border: 1px solid #eee;
-  padding: 1rem;
-  aspect-ratio: 1/1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main .registers .allergies {
-  justify-content: left;
-  align-items: flex-start;
-}
-main .registers .allergies .title {
-  margin-bottom: 0.5rem;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #fff;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-footer div {
-  padding: 0.7rem;
-}
-footer .main {
-  padding: 0;
-}
-footer .main .icon-main {
-  padding: 0.7rem;
-  background-color: #006fcf;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  transform: translateY(-1rem);
-}
-footer .main .options {
-  display: none;
-  position: fixed;
-  bottom: 5rem;
-  width: 90vw;
-  left: 5vw;
-}
-footer .main .options > a {
-  text-decoration: none;
-  display: block;
-  padding: 0.5rem;
-  text-align: center;
-  background-color: #006fcf;
-  margin-top: 0.5rem;
-  border-radius: 100rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-footer .main .options p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
-footer .main .options p img {
-  margin-right: 0.5rem;
 }
 
 .modal-load {
@@ -184,85 +66,219 @@ footer .main .options p img {
     transform: rotate(360deg);
   }
 }
-.modal-certificate {
-  position: fixed;
-  top: 0;
-  left: 0;
+.main-header {
+  padding: 0.4rem 0 1.5rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  background-color: #ecf3fa;
+}
+.main-header .user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .user-bar h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.main-header .user-bar p {
+  font-size: 0.9rem;
+  line-height: 140%;
+  color: #333;
+}
+.main-header .user-bar img {
+  width: 55px;
+}
+.main-header .vaccine-ad {
   width: 100%;
-  height: 100%;
-  background-color: #00000080;
-  display: none;
+  margin-top: 0.5rem;
 }
-.modal-certificate .close {
-  font-size: 2rem;
-  position: fixed;
-  top: 2rem;
-  left: 1rem;
-  color: #fff;
+.main-header .actions .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.4rem;
 }
-.modal-certificate .pdf {
-  position: fixed;
-  top: 2rem;
-  right: 1rem;
+.main-header .actions .header p {
+  font-weight: bold;
+  font-size: 0.87rem;
+}
+.main-header .actions .header a {
+  text-decoration: none;
+  color: #2b70cc;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: bold;
+}
+.main-header .actions .items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1.5rem;
+}
+.main-header .actions .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-header .actions .items .item .image {
+  padding: 0.5rem;
   background-color: #fff;
-  padding: 0.2rem;
   border-radius: 0.5rem;
 }
-.modal-certificate .bra {
+.main-header .actions .items .item .image img {
+  width: 40px;
+}
+.main-header .actions .items .item p {
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.3rem 0;
+  background-color: #fff;
+}
+.main-footer .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main-footer .items .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-footer .items .item img {
+  width: 25px;
+}
+.main-footer .items .item p {
+  font-size: 0.6rem;
+  color: #aaa;
+}
+.main-footer .items .item.active p {
+  display: inline-block;
+  background-color: #2b70cc;
+  color: transparent;
+  line-height: 5px;
+  width: 2rem;
+  border-radius: 1rem;
+  margin-top: 0.1rem;
+}
+.main-footer .items .item.main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-1.5rem);
+}
+.main-footer .items .item.main .options {
+  position: absolute;
+  bottom: 3.5rem;
+  display: none;
+  flex-direction: column;
+  width: 75vw;
+}
+.main-footer .items .item.main .options button {
+  border: none;
+  background-color: #006fcf;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.6rem 0;
+  margin-top: 0.5rem;
+}
+.main-footer .items .item.main .options button img {
+  width: 20px;
+  margin-right: 0.2rem;
+}
+.main-footer .items .item.main .item-content {
+  background-color: #2b70cc;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+.main-footer .items .item.main .item-content img {
+  width: 30px;
+  display: block;
+}
+
+.modal-vaccine {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-vaccine .header {
   position: fixed;
   top: 2rem;
-  left: calc(50vw - 49px);
-  background-color: #fff;
-  padding: 0.2rem 0.4rem;
-  border-radius: 5rem;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.modal-certificate .content {
-  position: fixed;
-  top: 6rem;
-  left: 1rem;
-  width: calc(100vw - 2rem);
-  height: calc(100vh - 10rem);
-  border-radius: 2rem;
+.modal-vaccine .header .close {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.modal-vaccine .header .bra {
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  height: 2rem;
+}
+.modal-vaccine .header .pdf {
+  padding: 0.2rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  height: 2rem;
+}
+.modal-vaccine .content {
+  padding: 1rem 1rem 2rem;
+  font-size: 0.6rem;
+  width: 250px;
+  margin: 7rem auto 0;
+  border-radius: 1rem;
   background-image: url(./images/logo-bra.jpeg);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 50% 25%;
   background-color: #f9fbfc;
-  font-size: 0.9rem;
+  z-index: 3;
 }
-.modal-certificate .content .content-2 {
-  padding: 1rem;
+.modal-vaccine .content .background {
+  width: calc(100% + 2rem);
+  border-radius: 1rem 1rem 0 0;
+  margin: -1rem -1rem 1rem -1rem;
 }
-.modal-certificate .content img {
-  border-radius: 2rem 2rem 0 0;
-  width: 100%;
-}
-.modal-certificate .content h3 {
+.modal-vaccine .content h2 {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-.modal-certificate .content strong {
   font-weight: bold;
   font-size: 0.8rem;
 }
-.modal-certificate .content .flex {
-  display: flex;
+.modal-vaccine .content strong {
+  display: inline-block;
+  margin-top: 0.1rem;
 }
-.modal-certificate .content .flex > div {
-  flex-basis: 50%;
+.modal-vaccine .content .flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.modal-certificate .content .vaccine {
+.modal-vaccine .content .vaccine {
   border: 1px solid #f5d04b;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-}
-.modal-certificate .content .vaccine h3 {
-  text-align: left;
-  font-size: 1rem;
-  margin-bottom: 0;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  border-radius: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

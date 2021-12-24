@@ -200,7 +200,7 @@ main {
 }
 .portfolio .project:hover, .portfolio .project:focus {
   background-position: 50% -20rem;
-  filter: brightness(0.8) grayscale(0);
+  filter: brightness(0.8);
 }
 .portfolio .project:hover .overlay, .portfolio .project:focus .overlay {
   opacity: 1;

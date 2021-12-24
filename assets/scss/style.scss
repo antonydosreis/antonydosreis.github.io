@@ -188,7 +188,7 @@ main {
     &:hover,
     &:focus {
       background-position: 50% -20rem;
-      filter: brightness(0.8) grayscale(0);
+      filter: brightness(0.8);
       .overlay {
         opacity: 1;
         .content {

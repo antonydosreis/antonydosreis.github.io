@@ -8,109 +8,135 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="manifest" href="./manifest.json" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
-    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbadƒ5">
-    <link rel="shortcut icon" href="./icons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="ConnecteSUS">
-    <meta name="application-name" content="ConnecteSUS">
-    <meta name="msapplication-TileColor" content="#00356d">
-    <meta name="theme-color" content="#00356d">
-
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./icons/safari-pinned-tab.svg"
+      color="#5bbadƒ5"
+    />
+    <link rel="shortcut icon" href="./icons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="ConnecteSUS" />
+    <meta name="application-name" content="ConnecteSUS" />
+    <meta name="msapplication-TileColor" content="#00356d" />
+    <meta name="theme-color" content="#00356d" />
   </head>
   <body>
-    <header>
-      <div class="header-user-bar">
-        <div class="info">
-          <p class="main"><b>Olá, Lucas Antony dos Reis</b></p>
-          <p>CPF - 046.918.910-05</p>
-          <p>CNS - 808386675740001</p>
-          <!-- https://geradornv.com.br/gerador-cns/ -->
-        </div>
-        <div class="image" onclick="open_div('modal-load', 'flex')">
-          <img src="images/icon-user.jpeg" />
-        </div>
-      </div>
-      <div class="header-ad">
-        <img src="images/vaccine-ad.jpeg" />
-      </div>
-      <div class="header-actions">
-        <div class="title">
-          <p><b>Ações rápidas</b></p>
-          <a href="#" onclick="open_div('modal-load', 'flex')">VER TODOS</a>
-        </div>
-        <div class="items">
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-1.jpeg" />
-            <p>Vacinas</p>
+    <header class="main-header">
+      <div class="container">
+        <div class="user-bar" onclick="open_div('modal-load', 'flex')">
+          <div class="info">
+            <h1>Olá, Lucas Antony dos Reis</h1>
+            <p>CPF - 046.918.910-05</p>
+            <p>CNS - 808386675740001</p>
           </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-2.jpeg" />
-            <p>Exames</p>
+          <img src="images/icon-user.jpeg" alt="perfil" />
+        </div>
+        <img
+          class="vaccine-ad"
+          src="./images/vaccine-ad.jpeg"
+          alt="vaccine-ad"
+        />
+        <div class="actions">
+          <div class="header">
+            <p>Ações rápidas</p>
+            <a href="#">Ver todos</a>
           </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-3.jpeg" />
-            <p>Medicamentos</p>
-          </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-4.jpeg" />
-            <p>Valida<br />QRCode</p>
+          <div class="items">
+            <div class="item" onclick="open_div('modal-load', 'flex')">
+              <div class="image">
+                <img src="./images/icon-home-1.jpeg" />
+              </div>
+              <p>Vacinas</p>
+            </div>
+            <div class="item" onclick="open_div('modal-load', 'flex')">
+              <div class="image">
+                <img src="./images/icon-home-2.jpeg" />
+              </div>
+              <p>Exames</p>
+            </div>
+            <div class="item" onclick="open_div('modal-load', 'flex')">
+              <div class="image">
+                <img src="./images/icon-home-3.jpeg" />
+              </div>
+              <p>Atendimentos</p>
+            </div>
+            <div class="item" onclick="open_div('modal-load', 'flex')">
+              <div class="image">
+                <img src="./images/icon-home-4.jpeg" />
+              </div>
+              <p>Medicamentos</p>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <div class="registers">
-        <div class="add-register" onclick="open_div('modal-load', 'flex')">
-          <img src="images/add-register.jpeg" />
-          <p>Adicionar registro</p>
-        </div>
-        <div class="allergies">
-          <p class="title"><b>ALERGIAS</b></p>
-          <p>Clique aqui para acessar as suas alergias</p>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="items">
+          <div class="item active" onclick="open_div('modal-load', 'flex')">
+            <img src="./images/icon-footer-1.jpeg" />
+            <p>Home</p>
+          </div>
+          <div class="item" onclick="open_div('modal-load', 'flex')">
+            <img src="./images/icon-footer-2.jpeg" />
+            <p>Histórico</p>
+          </div>
+          <div class="item main" onclick="open_div('options', 'flex')">
+            <div class="item-content">
+              <img src="./images/icon-footer-3.jpeg" />
+            </div>
+            <div class="options" id="options">
+              <button onclick="open_div('modal-load', 'flex')">
+                <img src="./images/hover-icon-1.jpeg" /> Carteira Nacional de
+                Vacinação
+              </button>
+              <button onclick="open_div('modal-vaccine', 'flex')">
+                <img src="./images/hover-icon-2.jpeg" /> Certificado de Vacina
+                COVID-19
+              </button onclick="open_div('modal-load', 'flex')">
+              <button>
+                <img src="./images/hover-icon-3.jpeg" /> Cartão do SUS
+              </button>
+            </div>
+          </div>
+          <div class="item" onclick="open_div('modal-load', 'flex')">
+            <img src="./images/icon-footer-4.jpeg" />
+            <p>Registros</p>
+          </div>
+          <div class="item" onclick="open_div('modal-load', 'flex')">
+            <img src="./images/icon-footer-5.jpeg" />
+            <p>mais</p>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-1.jpeg" /></div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-2.jpeg" /></div>
-      <div class="main">
-        <img
-          onclick="open_div('options')"
-          class="icon-main"
-          src="images/icon-footer-3.jpeg"
-        />
-        <div class="options" id="options">
-          <a href="#" onclick="open_div('modal-load', 'flex')">
-            <p>
-              <img src="images/hover-icon-1.jpeg" /> Carteira Nacional de
-              Vacinação
-            </p>
-          </a>
-          <a href="#" onclick="open_div('modal-certificate')">
-            <p>
-              <img src="images/hover-icon-2.jpeg" /> Certificado de Vacina
-              COVID-19
-            </p>
-          </a>
-          <a href="#" onclick="open_div('modal-load', 'flex')">
-            <p><img src="images/hover-icon-3.jpeg" /> Cartão SUS</p>
-          </a>
-        </div>
-      </div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-4.jpeg" /></div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-5.jpeg" /></div>
     </footer>
-    <div class="modal-certificate" id="modal-certificate">
-      <div class="close" onclick="close_div('modal-certificate')">&times;</div>
-      <img class="bra" src="images/bra.jpeg" />
-      <img class="pdf" src="images/pdf.jpeg" />
-      <div class="content">
-        <img src="images/bra-background.jpeg" />
-        <div class="content-2">
-          <h3>Certificado Nacional de Vacinação<br />Covid 19</h3>
+    <div class="modal-vaccine" id="modal-vaccine">
+      <div class="container">
+        <div class="header">
+          <p class="close" onclick="close_div('modal-vaccine')">&times;</p>
+          <img class="bra" src="./images/bra.jpeg" onclick="open_div('modal-load', 'flex')">
+          <img class="pdf" src="./images/pdf.jpeg" onclick="open_div('modal-load', 'flex')">
+        </div>
+        <div class="content">
+          <img class="background" src="./images//bra-background.jpeg">
+          <h2>Certificado Nacional de Vacinação<br />Covid 19</h2>
           <strong>Nome</strong>
           <p>Lucas Antony dos Reis</p>
           <strong>Nome da Mãe</strong>
