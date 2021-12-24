@@ -273,6 +273,10 @@ main {
   .footer .contacts .item {
     margin-bottom: 2rem;
   }
+
+  .internal-project {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 425px) {
   .header {

@@ -9,7 +9,7 @@ b,
 strong {
   font-weight: bold;
 }
-html{
+html {
   background-color: #000;
 }
 body {
@@ -227,7 +227,7 @@ main {
   gap: 2rem;
   color: #433;
   line-height: 170%;
-  .content{
+  .content {
     animation: show-right 0.5s forwards;
     animation-delay: 0.5s;
     transform: translateX(-1rem);
@@ -260,6 +260,9 @@ main {
         margin-bottom: 2rem;
       }
     }
+  }
+  .internal-project {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 425px) {
