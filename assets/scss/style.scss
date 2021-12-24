@@ -9,9 +9,13 @@ b,
 strong {
   font-weight: bold;
 }
+html{
+  background-color: #000;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  background-color: #fff;
 }
 .container,
 .container-fluid {
@@ -22,18 +26,93 @@ body {
 .container {
   max-width: 1300px;
 }
+@keyframes show-right {
+  0% {
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes show-top {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+main {
+  animation: show-top 0.5s forwards;
+  animation-delay: 0.4s;
+  transform: translateY(1rem);
+  opacity: 0;
+}
+.load-out,
+.load-in {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 2;
+  background-color: #000;
+}
+.load-in {
+  right: 0;
+  animation: load-in 0.3s forwards;
+}
+.load-out {
+  left: 0;
+  &.active {
+    animation: load-out 0.3s forwards;
+  }
+}
+@keyframes load-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes load-in {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
 .header {
   padding: 10rem 0 5rem;
   text-transform: uppercase;
   h1 {
     font-size: 3rem;
     font-weight: bold;
+    animation: show-right 0.5s forwards;
+    transform: translateX(-1rem);
+    opacity: 0;
   }
   p {
     font-size: 2rem;
     margin-bottom: 2rem;
+    animation: show-right 0.5s forwards;
+    animation-delay: 0.1s;
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  .actions {
+    animation: show-right 0.5s forwards;
+    animation-delay: 0.2s;
+    transform: translateX(-1rem);
+    opacity: 0;
   }
   a {
+    cursor: pointer;
     display: inline-block;
     color: #000;
     text-decoration: none;
@@ -47,6 +126,19 @@ body {
       color: #fff;
     }
   }
+  &.internal {
+    padding: 10rem 0;
+    color: #fff;
+    background-color: #333;
+    a {
+      color: #fff;
+      border-color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 }
 .portfolio {
   padding: 5rem 0;
@@ -54,6 +146,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   .project {
+    cursor: pointer;
     color: #000;
     text-decoration: none;
     text-align: center;
@@ -125,6 +218,35 @@ body {
         color: #777;
       }
     }
+  }
+}
+.internal-project {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  color: #433;
+  line-height: 170%;
+  .content{
+    animation: show-right 0.5s forwards;
+    animation-delay: 0.5s;
+    transform: translateX(-1rem);
+    opacity: 0;
+  }
+  img {
+    width: 100%;
+  }
+  h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000;
+  }
+  ol {
+    margin-left: 2rem;
   }
 }
 @media (max-width: 768px) {

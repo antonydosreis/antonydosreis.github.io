@@ -75,19 +75,23 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
+    <div class="load-in"></div>
+    <div class="load-out"></div>
     <header class="header">
       <div class="container">
         <h1>Antony dos Reis</h1>
         <p>Criatividade, tecnologia e funcionalidade</p>
-        <a href="#portfolio" title="Saiba mais">Portfólio</a>
-        <a href="#contact" title="Saiba mais">Contato</a>
+        <div class="actions">
+          <a href="#portfolio" title="Saiba mais">Portfólio</a>
+          <a href="#contact" title="Saiba mais">Contato</a>
+        </div>
       </div>
     </header>
     <main>
       <div class="container-fluid">
         <div class="portfolio" id="portfolio">
           <a
-            href="#"
+            onclick="goto('doces-petry')"
             class="project"
             style="background-image: url(./assets/images/docespetry.png)"
           >
@@ -99,7 +103,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('good-card')"
             class="project"
             style="background-image: url(./assets/images/goodcard.png)"
           >
@@ -111,7 +115,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('tag-interiores')"
             class="project"
             style="background-image: url(./assets/images/taginteriores.png)"
           >
@@ -123,7 +127,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('ferrmax')"
             class="project"
             style="background-image: url(./assets/images/ferrmax.png)"
           >
@@ -135,7 +139,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('armazem-do-lar')"
             class="project"
             style="background-image: url(./assets/images/armazemdolar.png)"
           >
@@ -147,7 +151,7 @@
             </div>
           </a>
           <a
-            href="#"
+            onclick="goto('atelie-faber')"
             class="project"
             style="background-image: url(./assets/images/ateliefaber.png)"
           >
@@ -159,7 +163,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('limpa-tubo')"
             class="project"
             style="background-image: url(./assets/images/limpatubo.png)"
           >
@@ -171,7 +175,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('agencia-oriup')"
             class="project"
             style="background-image: url(./assets/images/agenciaoriup.png)"
           >
@@ -183,7 +187,7 @@
             </div>
           </a>
           <a
-            href="#"
+          onclick="goto('fazenda-maranata')"
             class="project"
             style="background-image: url(./assets/images/fazendamaranata.png)"
           >
@@ -223,6 +227,6 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="templates/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
 </html>
