@@ -167,7 +167,7 @@ main {
   background-size: cover;
   background-position: 50% 0;
   transition: background 4s ease-in-out, filter 0.2s ease-in-out;
-  filter: brightness(0.8) grayscale(1);
+  filter: brightness(0.8);
 }
 .portfolio .project:after {
   content: "";
