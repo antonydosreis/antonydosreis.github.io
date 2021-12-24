@@ -1,182 +1,228 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Antony dos Reis | Desenvolvedor</title>
+    <meta
+      name="description"
+      content="Desenvolvimento de sites, sistemas, erps, landing pages e hotsites"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ConecteSUS</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="manifest" href="./manifest.json" />
+    <meta
+      name="author"
+      content="Antony dos Reis, lucasantonydosreis@gmail.com"
+    />
+    <link rel="canonical" href="https://antonydosreis.github.io/" />
+    <meta name="robots" content="index, nofollow" />
+    <!-- ICON-->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
-    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbadƒ5">
-    <link rel="shortcut icon" href="./icons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="ConnecteSUS">
-    <meta name="application-name" content="ConnecteSUS">
-    <meta name="msapplication-TileColor" content="#00356d">
-    <meta name="theme-color" content="#00356d">
-
+    <!-- SMO FACEBOOK-->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://antonydosreis.github.io" />
+    <meta property="og:title" content="Antony dos Reis | Desenvolvedor" />
+    <meta property="og:site_name" content="Antony dos Reis | Desenvolvedor" />
+    <meta
+      property="og:description"
+      content="Desenvolvimento de sites, sistemas, erps, landing pages e hotsites"
+    />
+    <meta
+      property="og:image"
+      content="https://antonydosreis.github.io/templates/images/cover.jpg"
+    />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:type" content="website" />
+    <!-- SMO TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="Desenvolvimento de sites, sistemas, erps, landing pages e hotsites"
+    />
+    <meta
+      name="twitter:title"
+      content="antonydosreis | Menu online com pedidos no WhatsApp"
+    />
+    <meta name="twitter:site" content="@antony_dos_reis" />
+    <meta
+      name="twitter:image"
+      content="https://antonydosreis.github.io/templates/images/cover.jpg"
+    />
+    <meta name="twitter:creator" content="@antony_dos_reis" />
+    <!-- STRUCTURED GOOGLE DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Antony dos Reis | Desenvolvedor",
+        "image": "https://antonydosreis.github.io/templates/images/cover.jpg",
+        "logo": "https://antonydosreis.github.io/templates/images/logo.png",
+        "telephone": "51994641949",
+        "email": "lucasantonydosreis@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Rio Pelotas, nº 124",
+          "addressLocality": "Bairro Liberdade - Novo Hamburgo",
+          "addressRegion": "RS",
+          "addressCountry": "Brasil",
+          "postalCode": "93332-330"
+        },
+        "url": "https://antonydosreis.github.io",
+        "priceRange": "$"
+      }
+    </script>
+    <!-- STYLE-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-user-bar">
-        <div class="info">
-          <p class="main"><b>Olá, Lucas Antony dos Reis</b></p>
-          <p>CPF - 046.918.910-05</p>
-          <p>CNS - 808386675740001</p>
-          <!-- https://geradornv.com.br/gerador-cns/ -->
-        </div>
-        <div class="image" onclick="open_div('modal-load', 'flex')">
-          <img src="images/icon-user.jpeg" />
-        </div>
-      </div>
-      <div class="header-ad">
-        <img src="images/vaccine-ad.jpeg" />
-      </div>
-      <div class="header-actions">
-        <div class="title">
-          <p><b>Ações rápidas</b></p>
-          <a href="#" onclick="open_div('modal-load', 'flex')">VER TODOS</a>
-        </div>
-        <div class="items">
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-1.jpeg" />
-            <p>Vacinas</p>
-          </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-2.jpeg" />
-            <p>Exames</p>
-          </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-3.jpeg" />
-            <p>Medicamentos</p>
-          </div>
-          <div class="item" onclick="open_div('modal-load', 'flex')">
-            <img src="images/icon-home-4.jpeg" />
-            <p>Valida<br />QRCode</p>
-          </div>
-        </div>
+    <header class="header">
+      <div class="container">
+        <h1>Antony dos Reis</h1>
+        <p>Criatividade, tecnologia e funcionalidade</p>
+        <a href="#portfolio" title="Saiba mais">Portfólio</a>
+        <a href="#contact" title="Saiba mais">Contato</a>
       </div>
     </header>
     <main>
-      <div class="registers">
-        <div class="add-register" onclick="open_div('modal-load', 'flex')">
-          <img src="images/add-register.jpeg" />
-          <p>Adicionar registro</p>
-        </div>
-        <div class="allergies">
-          <p class="title"><b>ALERGIAS</b></p>
-          <p>Clique aqui para acessar as suas alergias</p>
+      <div class="container-fluid">
+        <div class="portfolio" id="portfolio">
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/docespetry.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Doces Petry</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/goodcard.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Good Card</h2>
+                <p class="type">Landing Page</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/taginteriores.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Tag Interiores</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/ferrmax.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Ferrmax</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/armazemdolar.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Armazém do Lar</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/ateliefaber.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Ateliê Faber</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/limpatubo.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Limpa Tubo</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/agenciaoriup.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Agência Oriup</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project"
+            style="background-image: url(./assets/images/fazendamaranata.png)"
+          >
+            <div class="overlay">
+              <div class="content">
+                <h2 class="title">Fazenda Maranata</h2>
+                <p class="type">Website completo</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </main>
-    <footer>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-1.jpeg" /></div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-2.jpeg" /></div>
-      <div class="main">
-        <img
-          onclick="open_div('options')"
-          class="icon-main"
-          src="images/icon-footer-3.jpeg"
-        />
-        <div class="options" id="options">
-          <a href="#" onclick="open_div('modal-load', 'flex')">
-            <p>
-              <img src="images/hover-icon-1.jpeg" /> Carteira Nacional de
-              Vacinação
-            </p>
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="contacts">
+          <a href="https://wa.me/5551994641949" target="_blank" class="item">
+            <p class="title">WhatsApp</p>
+            <p class="description">(51) 99464 1949</p>
           </a>
-          <a href="#" onclick="open_div('modal-certificate')">
-            <p>
-              <img src="images/hover-icon-2.jpeg" /> Certificado de Vacina
-              COVID-19
-            </p>
+          <a
+            href="mailto:lucasantonydosreis@gmail.com"
+            target="_blank"
+            class="item"
+          >
+            <p class="title">Email</p>
+            <p class="description">lucasantonydosreis@gmail.com</p>
           </a>
-          <a href="#" onclick="open_div('modal-load', 'flex')">
-            <p><img src="images/hover-icon-3.jpeg" /> Cartão SUS</p>
+          <a
+            href="https://www.linkedin.com/in/antony-dos-reis/"
+            target="_blank"
+            class="item"
+          >
+            <p class="title">Linkedin</p>
+            <p class="description">linkedin.com/in/antony-dos-reis/</p>
           </a>
         </div>
       </div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-4.jpeg" /></div>
-      <div onclick="open_div('modal-load', 'flex')"><img src="images/icon-footer-5.jpeg" /></div>
     </footer>
-    <div class="modal-certificate" id="modal-certificate">
-      <div class="close" onclick="close_div('modal-certificate')">&times;</div>
-      <img class="bra" src="images/bra.jpeg" />
-      <img class="pdf" src="images/pdf.jpeg" />
-      <div class="content">
-        <img src="images/bra-background.jpeg" />
-        <div class="content-2">
-          <h3>Certificado Nacional de Vacinação<br />Covid 19</h3>
-          <strong>Nome</strong>
-          <p>Lucas Antony dos Reis</p>
-          <strong>Nome da Mãe</strong>
-          <p>Leila Tatiana Canabarro</p>
-          <div class="flex">
-            <div>
-              <strong>Nascimento</strong>
-              <p>18/04/2000</p>
-            </div>
-            <div>
-              <strong>CPF ou CNS</strong>
-              <p>046.918.910-05</p>
-            </div>
-          </div>
-          <div class="flex">
-            <div>
-              <strong>Sexo</strong>
-              <p>Masculino</p>
-            </div>
-            <div>
-              <strong>Nacionalidade</strong>
-              <p>Brasileiro</p>
-            </div>
-          </div>
-          <div class="vaccine">
-            <h3>COVID 19 - ASTRAZENECA / CHADOX1-S</h3>
-            <strong>Estabelecimento de saúde</strong>
-            <p>2708426 - Sms Cms Ermani Agricola Ap 10</p>
-            <strong>Fabricante</strong>
-            <p>ASTRAZENECA</p>
-            <div class="flex">
-              <div>
-                <strong>Lote</strong>
-                <p>214VCD044W</p>
-              </div>
-              <div>
-                <strong>Cód. Vacinador</strong>
-                <p>20155330250007</p>
-              </div>
-            </div>
-          </div>
-          <div class="vaccine">
-            <h3>COVID 19 - ASTRAZENECA / COVISHIELD</h3>
-            <strong>Estabelecimento de saúde</strong>
-            <p>2280795 - Sms Cms Joao Barros Barreto Ap 21</p>
-            <strong>Fabricante</strong>
-            <p>ASTRAZENECA/FIOCRUZ</p>
-            <div class="flex">
-              <div>
-                <strong>Lote</strong>
-                <p>216VCD210W</p>
-              </div>
-              <div>
-                <strong>Cód. Vacinador</strong>
-                <p>201042446440003</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal-load" id="modal-load" onclick="close_div('modal-load')">
-      <div class="content">
-        <div class="load"></div>
-      </div>
-    </div>
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="templates/js/script.js"></script>
   </body>
 </html>
